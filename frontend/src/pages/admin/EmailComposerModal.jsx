@@ -346,7 +346,7 @@ export default function EmailComposerModal({
             <input
               ref={subjectInputRef}
               type="text"
-              placeholder="e.g. Congratulations {{name}}! You Have Been Selected - AaoSikhe"
+              placeholder="e.g. Congratulations {{name}}! You Have Been Selected - Aao Seekhe"
               value={subject}
               onChange={(e) => setSubject(e.target.value)}
               className="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs sm:text-sm text-slate-900 font-medium focus:border-indigo-600 focus:ring-2 focus:ring-indigo-500/20 focus:bg-white transition"
@@ -453,7 +453,7 @@ export default function EmailComposerModal({
 Congratulations! We are delighted to inform you that your application has been selected.
 
 Best Regards,
-AaoSikhe Team"
+Aao Seekhe Team"
                   value={bodyHtml}
                   onChange={(e) => setBodyHtml(e.target.value)}
                   className="w-full p-4 bg-slate-50 border border-slate-200 rounded-2xl text-xs sm:text-sm text-slate-800 font-mono leading-relaxed focus:border-indigo-600 focus:ring-2 focus:ring-indigo-500/20 focus:bg-white transition"

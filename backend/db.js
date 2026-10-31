@@ -17,43 +17,43 @@ let pool = null;
 export const DEFAULT_ADMIN_EMAIL = 'sunny260604@gmail.com';
 export const DEFAULT_ADMIN_PASSWORD_PLAIN = '123123';
 
-// Pre-seeded professional email templates for AaoSikhe
+// Pre-seeded professional email templates for Aao Seekhe
 export const DEFAULT_EMAIL_TEMPLATES = [
   {
     title: 'Candidate Selection Confirmation',
-    subject: 'Congratulations {{name}}! Application Selected - AaoSikhe',
+    subject: 'Congratulations {{name}}! Application Selected - Aao Seekhe',
     category: 'selection',
     body_html: `<p>Dear <strong>{{name}}</strong>,</p>
 <p>Congratulations!</p>
-<p>We are delighted to inform you that your application for the <strong>AaoSikhe Candidate Program</strong> has been successfully reviewed and <strong>selected</strong>.</p>
+<p>We are delighted to inform you that your application for the <strong>Aao Seekhe Candidate Program</strong> has been successfully reviewed and <strong>selected</strong>.</p>
 <p>We were thoroughly impressed by your profile and credentials. Our admissions coordinator will connect with you shortly via email at <strong>{{email}}</strong> and phone at <strong>{{mobile}}</strong> to provide further details regarding next steps.</p>
-<p>Thank you for choosing AaoSikhe. We look forward to having you with us!</p>
-<p>Warm regards,<br><strong>Admissions Committee, AaoSikhe</strong></p>`,
+<p>Thank you for choosing Aao Seekhe. We look forward to having you with us!</p>
+<p>Warm regards,<br><strong>Admissions Committee, Aao Seekhe</strong></p>`,
   },
   {
     title: 'Interview Invitation',
-    subject: 'Interview Invitation for {{name}} - AaoSikhe',
+    subject: 'Interview Invitation for {{name}} - Aao Seekhe',
     category: 'interview',
     body_html: `<p>Dear <strong>{{name}}</strong>,</p>
-<p>Thank you for submitting your application to <strong>AaoSikhe</strong>.</p>
+<p>Thank you for submitting your application to <strong>Aao Seekhe</strong>.</p>
 <p>We are pleased to invite you for an interactive interview session to discuss your background, interests, and potential fit for our programs.</p>
 <blockquote><strong>Notice:</strong> Please make sure your registered phone number <strong>{{mobile}}</strong> is reachable and keep an eye on <strong>{{email}}</strong> for your session link and schedule.</blockquote>
 <p>We look forward to speaking with you soon!</p>
-<p>Best regards,<br><strong>Interview Panel, AaoSikhe</strong></p>`,
+<p>Best regards,<br><strong>Interview Panel, Aao Seekhe</strong></p>`,
   },
   {
     title: 'Application Status Update',
-    subject: 'Update Regarding Your Application - AaoSikhe',
+    subject: 'Update Regarding Your Application - Aao Seekhe',
     category: 'update',
     body_html: `<p>Dear <strong>{{name}}</strong>,</p>
-<p>We are writing to provide you with an update regarding your application submitted to <strong>AaoSikhe</strong>.</p>
+<p>We are writing to provide you with an update regarding your application submitted to <strong>Aao Seekhe</strong>.</p>
 <p>Your application is currently under active review by our evaluation committee. We are assessing all candidate submissions carefully and will notify you of our final decision at <strong>{{email}}</strong>.</p>
-<p>Thank you for your patience and interest in AaoSikhe.</p>
-<p>Sincerely,<br><strong>Review Board, AaoSikhe</strong></p>`,
+<p>Thank you for your patience and interest in Aao Seekhe.</p>
+<p>Sincerely,<br><strong>Review Board, Aao Seekhe</strong></p>`,
   },
   {
     title: 'Certificate Distribution Announcement',
-    subject: 'Certificate Distribution Notice for {{name}} - AaoSikhe',
+    subject: 'Certificate Distribution Notice for {{name}} - Aao Seekhe',
     category: 'certificate',
     body_html: `<p>Dear <strong>{{name}}</strong>,</p>
 <p>We are delighted to announce that your official Certificate of Completion is ready for collection and digital download.</p>
@@ -65,28 +65,28 @@ export const DEFAULT_EMAIL_TEMPLATES = [
 </ul>
 <p>If any details require correction, please notify us immediately by replying to this message.</p>
 <p>Congratulations once again on reaching this significant milestone!</p>
-<p>Warm regards,<br><strong>Academic Operations, AaoSikhe</strong></p>`,
+<p>Warm regards,<br><strong>Academic Operations, Aao Seekhe</strong></p>`,
   },
   {
     title: 'Document Verification Request',
-    subject: 'Action Required: Document Verification for {{name}} - AaoSikhe',
+    subject: 'Action Required: Document Verification for {{name}} - Aao Seekhe',
     category: 'verification',
     body_html: `<p>Dear <strong>{{name}}</strong>,</p>
 <p>As part of our formal candidate onboarding process, we request you to complete your document verification.</p>
 <p>Our verification coordinator will contact you at <strong>{{mobile}}</strong> or send a secure upload link to <strong>{{email}}</strong>.</p>
 <p>Please keep your identification and academic records accessible to ensure smooth verification.</p>
 <p>Thank you for your prompt cooperation.</p>
-<p>Kind regards,<br><strong>Verification Department, AaoSikhe</strong></p>`,
+<p>Kind regards,<br><strong>Verification Department, Aao Seekhe</strong></p>`,
   },
   {
     title: 'Important Candidate Notice',
-    subject: 'Important Notice for Candidates - AaoSikhe',
+    subject: 'Important Notice for Candidates - Aao Seekhe',
     category: 'general',
     body_html: `<p>Dear <strong>{{name}}</strong>,</p>
 <p>Please take note of upcoming schedules, calendar events, and candidate guidelines for the upcoming session.</p>
 <p>All candidates are requested to ensure their contact details ({{mobile}}) remain active and to regularly monitor notifications sent to <strong>{{email}}</strong>.</p>
 <p>If you have any questions or require assistance, please reach out to our support desk.</p>
-<p>Best regards,<br><strong>AaoSikhe Administration</strong></p>`,
+<p>Best regards,<br><strong>Aao Seekhe Administration</strong></p>`,
   },
 ];
 

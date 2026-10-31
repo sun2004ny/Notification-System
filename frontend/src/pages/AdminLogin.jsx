@@ -68,7 +68,7 @@ export default function AdminLogin() {
               <Lock className="w-6 h-6" />
             </div>
             <div>
-              <h2 className="text-xl font-bold text-white tracking-tight">AaoSikhe</h2>
+              <h2 className="text-xl font-bold text-white tracking-tight">Aao Seekhe</h2>
               <p className="text-xs text-slate-400">Admin Management Portal</p>
             </div>
           </div>

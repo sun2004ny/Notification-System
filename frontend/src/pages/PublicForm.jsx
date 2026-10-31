@@ -192,7 +192,7 @@ export default function PublicForm() {
       </div>
 
       {/* ========================================================= */}
-      {/* TOP HEADER: DYNAMIC & COLORFUL AAOSIKHE BRANDING          */}
+      {/* TOP HEADER: DYNAMIC & COLORFUL Aao Seekhe BRANDING          */}
       {/* ========================================================= */}
       <header className="w-full bg-white/90 backdrop-blur-xl border-b border-slate-200/90 py-4 px-4 sm:px-8 lg:px-12 shadow-sm">
         <div className="w-full flex items-center justify-between">
@@ -206,7 +206,7 @@ export default function PublicForm() {
             <div>
               <div className="flex items-center space-x-2">
                 <span className="text-xl sm:text-2xl font-black tracking-tight bg-gradient-to-r from-amber-500 via-rose-500 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
-                  AaoSikhe
+                  Aao Seekhe
                 </span>
                 <span className="relative flex h-2 w-2">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-pink-400 opacity-75"></span>
@@ -228,25 +228,25 @@ export default function PublicForm() {
         
         {submitSuccess ? (
           /* Success Screen */
-          <div className="w-full max-w-3xl bg-slate-900 border border-slate-800 rounded-2xl sm:rounded-3xl shadow-2xl p-6 sm:p-12 text-center animate-fadeIn box-border">
+          <div className="w-full max-w-3xl bg-white/95 border border-slate-200/90 rounded-2xl sm:rounded-3xl shadow-xl shadow-slate-200/50 p-6 sm:p-12 text-center animate-fadeIn box-border">
             <div className="w-20 h-20 bg-gradient-to-tr from-emerald-400 to-teal-500 text-white rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-lg shadow-emerald-500/25">
               <CheckCircle className="w-10 h-10" />
             </div>
             
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-800 tracking-tight">
               Application Submitted Successfully!
             </h2>
             
-            <p className="text-slate-300 text-sm sm:text-base mt-3 max-w-md mx-auto leading-relaxed">
-              Thank you, <strong className="text-white">{submitSuccess.fullName}</strong>. Your information has been securely stored with AaoSikhe.
+            <p className="text-slate-600 text-sm sm:text-base mt-3 max-w-md mx-auto leading-relaxed">
+              Thank you, <strong className="text-slate-900">{submitSuccess.fullName}</strong>. Your information has been securely stored with Aao Seekhe.
             </p>
 
-            <div className="mt-8 p-5 rounded-2xl bg-slate-950/70 border border-slate-800 text-xs sm:text-sm text-slate-300 max-w-lg mx-auto text-left space-y-2">
-              <p className="font-bold text-white flex items-center space-x-2">
-                <CheckCircle2 className="w-4 h-4 text-emerald-400" />
+            <div className="mt-8 p-5 rounded-2xl bg-slate-50/90 border border-slate-200 text-xs sm:text-sm text-slate-600 max-w-lg mx-auto text-left space-y-2">
+              <p className="font-bold text-slate-800 flex items-center space-x-2">
+                <CheckCircle2 className="w-4 h-4 text-emerald-500" />
                 <span>Next Steps</span>
               </p>
-              <p className="pl-6">&bull; A confirmation email has been dispatched to <strong className="text-white">{submitSuccess.email}</strong>.</p>
+              <p className="pl-6">&bull; A confirmation email has been dispatched to <strong className="text-slate-900">{submitSuccess.email}</strong>.</p>
               <p className="pl-6">&bull; Our admissions team will review your application and reach out if necessary.</p>
             </div>
 
@@ -260,25 +260,25 @@ export default function PublicForm() {
             </button>
           </div>
         ) : (
-          /* Dark-Mode Full-Screen Form Container */
-          <div className="w-full max-w-5xl bg-slate-900/90 border border-slate-800 rounded-2xl sm:rounded-3xl shadow-2xl backdrop-blur-xl overflow-hidden box-border">
+          /* Light-Mode Form Container matching page background */
+          <div className="w-full max-w-5xl bg-white/95 border border-slate-200/90 rounded-2xl sm:rounded-3xl shadow-xl shadow-slate-200/60 backdrop-blur-xl overflow-hidden box-border">
             
             {/* Form Title Banner */}
-            <div className="bg-gradient-to-r from-slate-900 via-indigo-950 to-purple-950 px-4 sm:px-8 py-5 sm:py-7 text-white border-b border-slate-800">
-              <h2 className="text-xl sm:text-2xl font-black tracking-tight text-white">
+            <div className="bg-gradient-to-r from-slate-50 via-indigo-50/40 to-purple-50/40 px-4 sm:px-8 py-5 sm:py-7 border-b border-slate-200/80">
+              <h2 className="text-xl sm:text-2xl font-black tracking-tight text-slate-800">
                 Submit Your Information
               </h2>
-              <p className="text-xs sm:text-sm text-indigo-200/80 mt-1">
-                Please complete the form below. Required fields are marked with an asterisk (<span className="text-rose-400 font-bold">*</span>).
+              <p className="text-xs sm:text-sm text-slate-500 mt-1">
+                Please complete the form below. Required fields are marked with an asterisk (<span className="text-rose-500 font-bold">*</span>).
               </p>
             </div>
 
             {/* Form Fields */}
-            <div className="p-4 sm:p-7 lg:p-9">
+            <div className="p-4 sm:p-7 lg:p-9 bg-white">
               
               {submitError && (
-                <div className="p-4 rounded-2xl mb-6 bg-rose-500/10 border border-rose-500/30 text-rose-300 flex items-start space-x-3 text-xs sm:text-sm">
-                  <AlertCircle className="w-5 h-5 text-rose-400 flex-shrink-0 mt-0.5" />
+                <div className="p-4 rounded-2xl mb-6 bg-rose-50 border border-rose-200 text-rose-700 flex items-start space-x-3 text-xs sm:text-sm">
+                  <AlertCircle className="w-5 h-5 text-rose-500 flex-shrink-0 mt-0.5" />
                   <p className="font-medium break-words">{submitError}</p>
                 </div>
               )}
@@ -291,39 +291,40 @@ export default function PublicForm() {
                   {/* Full Name */}
                   <div className="w-full min-w-0">
                     <div className="flex items-center justify-between mb-1.5">
-                      <label htmlFor="fullName" className="text-xs sm:text-sm font-bold text-slate-200">
-                        Full Name <span className="text-rose-400 font-bold">*</span>
+                      <label htmlFor="fullName" className="text-xs sm:text-sm font-bold text-slate-700">
+                        Full Name <span className="text-rose-500 font-bold">*</span>
                       </label>
                       {touched.fullName && !errors.fullName && (
-                        <span className="text-[11px] text-emerald-400 font-bold flex items-center space-x-1">
+                        <span className="text-[11px] text-emerald-600 font-bold flex items-center space-x-1">
                           <CheckCircle className="w-3.5 h-3.5" />
                           <span>Valid</span>
                         </span>
                       )}
                     </div>
                     <div className="relative">
-                      <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-500">
+                      <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
                         <User className="w-4 h-4 sm:w-5 sm:h-5" />
                       </div>
                       <input
                         id="fullName"
                         name="fullName"
                         type="text"
+                        placeholder="e.g. Rahul Sharma"
                         value={formData.fullName}
                         onChange={handleChange}
                         onBlur={handleBlur}
                         disabled={isSubmitting}
-                        className={`w-full pl-10 sm:pl-11 pr-4 py-3 rounded-xl text-xs sm:text-sm text-white bg-slate-950/70 border transition ${
+                        className={`w-full pl-10 sm:pl-11 pr-4 py-3 rounded-xl text-xs sm:text-sm text-slate-800 placeholder-slate-400 bg-slate-50/70 border transition outline-none ${
                           errors.fullName && touched.fullName
-                            ? 'border-rose-500 bg-rose-500/10 focus:border-rose-400 focus:ring-2 focus:ring-rose-500/20'
+                            ? 'border-rose-400 bg-rose-50/40 text-slate-900 focus:bg-white focus:border-rose-500 focus:ring-4 focus:ring-rose-500/10'
                             : touched.fullName && !errors.fullName
-                            ? 'border-emerald-500 bg-emerald-500/10 focus:border-emerald-400 focus:ring-2 focus:ring-emerald-500/20'
-                            : 'border-slate-700/80 hover:border-slate-600 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20'
+                            ? 'border-emerald-400 bg-emerald-50/30 text-slate-900 focus:bg-white focus:border-emerald-500 focus:ring-4 focus:ring-emerald-500/10'
+                            : 'border-slate-200/90 hover:border-slate-300 focus:bg-white focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/10'
                         }`}
                       />
                     </div>
                     {errors.fullName && touched.fullName && (
-                      <p className="mt-1 text-xs text-rose-400 flex items-center space-x-1">
+                      <p className="mt-1.5 text-xs text-rose-600 font-medium flex items-center space-x-1">
                         <AlertCircle className="w-3.5 h-3.5 flex-shrink-0" />
                         <span>{errors.fullName}</span>
                       </p>
@@ -333,39 +334,40 @@ export default function PublicForm() {
                   {/* Email Address */}
                   <div className="w-full min-w-0">
                     <div className="flex items-center justify-between mb-1.5">
-                      <label htmlFor="email" className="text-xs sm:text-sm font-bold text-slate-200">
-                        Email Address <span className="text-rose-400 font-bold">*</span>
+                      <label htmlFor="email" className="text-xs sm:text-sm font-bold text-slate-700">
+                        Email Address <span className="text-rose-500 font-bold">*</span>
                       </label>
                       {touched.email && !errors.email && (
-                        <span className="text-[11px] text-emerald-400 font-bold flex items-center space-x-1">
+                        <span className="text-[11px] text-emerald-600 font-bold flex items-center space-x-1">
                           <CheckCircle className="w-3.5 h-3.5" />
                           <span>Valid</span>
                         </span>
                       )}
                     </div>
                     <div className="relative">
-                      <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-500">
+                      <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
                         <Mail className="w-4 h-4 sm:w-5 sm:h-5" />
                       </div>
                       <input
                         id="email"
                         name="email"
                         type="email"
+                        placeholder="name@example.com"
                         value={formData.email}
                         onChange={handleChange}
                         onBlur={handleBlur}
                         disabled={isSubmitting}
-                        className={`w-full pl-10 sm:pl-11 pr-4 py-3 rounded-xl text-xs sm:text-sm text-white bg-slate-950/70 border transition ${
+                        className={`w-full pl-10 sm:pl-11 pr-4 py-3 rounded-xl text-xs sm:text-sm text-slate-800 placeholder-slate-400 bg-slate-50/70 border transition outline-none ${
                           errors.email && touched.email
-                            ? 'border-rose-500 bg-rose-500/10 focus:border-rose-400 focus:ring-2 focus:ring-rose-500/20'
+                            ? 'border-rose-400 bg-rose-50/40 text-slate-900 focus:bg-white focus:border-rose-500 focus:ring-4 focus:ring-rose-500/10'
                             : touched.email && !errors.email
-                            ? 'border-emerald-500 bg-emerald-500/10 focus:border-emerald-400 focus:ring-2 focus:ring-emerald-500/20'
-                            : 'border-slate-700/80 hover:border-slate-600 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20'
+                            ? 'border-emerald-400 bg-emerald-50/30 text-slate-900 focus:bg-white focus:border-emerald-500 focus:ring-4 focus:ring-emerald-500/10'
+                            : 'border-slate-200/90 hover:border-slate-300 focus:bg-white focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/10'
                         }`}
                       />
                     </div>
                     {errors.email && touched.email && (
-                      <p className="mt-1 text-xs text-rose-400 flex items-center space-x-1">
+                      <p className="mt-1.5 text-xs text-rose-600 font-medium flex items-center space-x-1">
                         <AlertCircle className="w-3.5 h-3.5 flex-shrink-0" />
                         <span>{errors.email}</span>
                       </p>
@@ -377,18 +379,18 @@ export default function PublicForm() {
                 {/* Row 2: Mobile Number */}
                 <div className="w-full min-w-0">
                   <div className="flex items-center justify-between mb-1.5">
-                    <label htmlFor="mobileNumber" className="text-xs sm:text-sm font-bold text-slate-200">
-                      Mobile Number <span className="text-rose-400 font-bold">*</span>
+                    <label htmlFor="mobileNumber" className="text-xs sm:text-sm font-bold text-slate-700">
+                      Mobile Number <span className="text-rose-500 font-bold">*</span>
                     </label>
                     {touched.mobileNumber && !errors.mobileNumber && (
-                      <span className="text-[11px] text-emerald-400 font-bold flex items-center space-x-1">
+                      <span className="text-[11px] text-emerald-600 font-bold flex items-center space-x-1">
                         <CheckCircle className="w-3.5 h-3.5" />
                         <span>Valid</span>
                       </span>
                     )}
                   </div>
                   <div className="relative">
-                    <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-500">
+                    <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
                       <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
                     </div>
                     <input
@@ -403,17 +405,17 @@ export default function PublicForm() {
                       onChange={handleChange}
                       onBlur={handleBlur}
                       disabled={isSubmitting}
-                      className={`w-full pl-10 sm:pl-11 pr-4 py-3 rounded-xl text-xs sm:text-sm text-white bg-slate-950/70 border transition ${
+                      className={`w-full pl-10 sm:pl-11 pr-4 py-3 rounded-xl text-xs sm:text-sm text-slate-800 placeholder-slate-400 bg-slate-50/70 border transition outline-none ${
                         errors.mobileNumber && touched.mobileNumber
-                          ? 'border-rose-500 bg-rose-500/10 focus:border-rose-400 focus:ring-2 focus:ring-rose-500/20'
+                          ? 'border-rose-400 bg-rose-50/40 text-slate-900 focus:bg-white focus:border-rose-500 focus:ring-4 focus:ring-rose-500/10'
                           : touched.mobileNumber && !errors.mobileNumber
-                          ? 'border-emerald-500 bg-emerald-500/10 focus:border-emerald-400 focus:ring-2 focus:ring-emerald-500/20'
-                        : 'border-slate-700/80 hover:border-slate-600 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20'
+                          ? 'border-emerald-400 bg-emerald-50/30 text-slate-900 focus:bg-white focus:border-emerald-500 focus:ring-4 focus:ring-emerald-500/10'
+                          : 'border-slate-200/90 hover:border-slate-300 focus:bg-white focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/10'
                       }`}
                     />
                   </div>
                   {errors.mobileNumber && touched.mobileNumber && (
-                    <p className="mt-1 text-xs text-rose-400 flex items-center space-x-1">
+                    <p className="mt-1.5 text-xs text-rose-600 font-medium flex items-center space-x-1">
                       <AlertCircle className="w-3.5 h-3.5 flex-shrink-0" />
                       <span>{errors.mobileNumber}</span>
                     </p>
@@ -423,18 +425,18 @@ export default function PublicForm() {
                 {/* Row 3: Description (Optional) */}
                 <div className="w-full min-w-0">
                   <div className="flex items-center justify-between mb-1.5">
-                    <label htmlFor="description" className="text-xs sm:text-sm font-bold text-slate-200 flex items-center space-x-1.5">
+                    <label htmlFor="description" className="text-xs sm:text-sm font-bold text-slate-700 flex items-center space-x-1.5">
                       <span>Description</span>
-                      <span className="text-[10px] uppercase font-bold text-slate-400 bg-slate-800 px-2 py-0.5 rounded">
+                      <span className="text-[10px] uppercase font-bold text-slate-500 bg-slate-100 border border-slate-200 px-2 py-0.5 rounded">
                         Optional
                       </span>
                     </label>
-                    <span className="text-[11px] text-slate-500">
+                    <span className="text-[11px] font-medium text-slate-400">
                       {formData.description.length}/1000
                     </span>
                   </div>
                   <div className="relative">
-                    <div className="absolute top-3.5 left-3.5 pointer-events-none text-slate-500">
+                    <div className="absolute top-3.5 left-3.5 pointer-events-none text-slate-400">
                       <FileText className="w-4 h-4 sm:w-5 sm:h-5" />
                     </div>
                     <textarea
@@ -442,11 +444,12 @@ export default function PublicForm() {
                       name="description"
                       rows={4}
                       maxLength={1000}
+                      placeholder="Tell us more about your background or requirements..."
                       value={formData.description}
                       onChange={handleChange}
                       onBlur={handleBlur}
                       disabled={isSubmitting}
-                      className="w-full pl-10 sm:pl-11 pr-4 py-3 rounded-xl text-xs sm:text-sm text-white bg-slate-950/70 border border-slate-700/80 hover:border-slate-600 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 transition resize-y min-h-[110px]"
+                      className="w-full pl-10 sm:pl-11 pr-4 py-3 rounded-xl text-xs sm:text-sm text-slate-800 placeholder-slate-400 bg-slate-50/70 border border-slate-200/90 hover:border-slate-300 focus:bg-white focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/10 transition outline-none resize-y min-h-[110px]"
                     />
                   </div>
                 </div>
@@ -454,12 +457,12 @@ export default function PublicForm() {
                 {/* ========================================================= */}
                 {/* ACTION BUTTONS: ALWAYS ONE SINGLE ROW IN MOBILE & DESKTOP  */}
                 {/* ========================================================= */}
-                <div className="pt-4 flex flex-row items-center gap-2.5 sm:gap-4 w-full border-t border-slate-800">
+                <div className="pt-4 flex flex-row items-center gap-2.5 sm:gap-4 w-full border-t border-slate-100">
                   <button
                     type="button"
                     onClick={handleReset}
                     disabled={isSubmitting}
-                    className="flex-1 inline-flex items-center justify-center space-x-1.5 py-3 sm:py-3.5 px-3 rounded-xl border border-slate-700 bg-slate-800/80 hover:bg-slate-800 text-slate-200 text-xs sm:text-sm font-semibold transition disabled:opacity-50 cursor-pointer"
+                    className="flex-1 inline-flex items-center justify-center space-x-1.5 py-3 sm:py-3.5 px-3 rounded-xl border border-slate-200 bg-slate-100 hover:bg-slate-200/80 text-slate-700 text-xs sm:text-sm font-semibold transition active:scale-[0.99] disabled:opacity-50 cursor-pointer"
                   >
                     <RotateCcw className="w-4 h-4 flex-shrink-0" />
                     <span className="whitespace-nowrap font-medium">Clear</span>
@@ -495,7 +498,7 @@ export default function PublicForm() {
 
       {/* Clean Footer */}
       <footer className="w-full border-t border-slate-200/90 py-4 px-4 text-center text-xs text-slate-500 max-w-4xl mx-auto">
-        <p>&copy; {new Date().getFullYear()} AaoSikhe. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Aao Seekhe. All rights reserved.</p>
       </footer>
 
     </div>

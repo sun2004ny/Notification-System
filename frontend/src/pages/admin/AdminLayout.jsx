@@ -58,7 +58,7 @@ export default function AdminLayout() {
             <div>
               <div className="flex items-center space-x-2">
                 <span className="text-lg font-black tracking-tight bg-gradient-to-r from-amber-400 via-rose-400 via-purple-400 to-indigo-400 bg-clip-text text-transparent">
-                  AaoSikhe
+                  Aao Seekhe
                 </span>
                 <span className="relative flex h-2 w-2">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-pink-400 opacity-75"></span>
@@ -135,7 +135,7 @@ export default function AdminLayout() {
           </div>
           <div>
             <span className="font-black text-sm bg-gradient-to-r from-amber-400 via-rose-400 to-indigo-400 bg-clip-text text-transparent">
-              AaoSikhe
+              Aao Seekhe
             </span>
             <p className="text-[10px] text-slate-400 font-medium">Admin Portal</p>
           </div>

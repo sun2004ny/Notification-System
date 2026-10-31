@@ -161,7 +161,7 @@ export const renderBrandedHtmlEmail = ({ subject, bodyHtml, applicant = {} }) =>
       <div class="top-bar"></div>
       <div class="header">
         <div>
-          <h1 class="brand-title">AaoSikhe</h1>
+          <h1 class="brand-title">Aao Seekhe</h1>
           <p class="brand-subtitle">Official Candidate Notification</p>
         </div>
       </div>
@@ -169,8 +169,8 @@ export const renderBrandedHtmlEmail = ({ subject, bodyHtml, applicant = {} }) =>
         ${personalizedBody}
       </div>
       <div class="footer">
-        <p><strong>AaoSikhe</strong> &bull; Candidate Portal &bull; Verified Communication</p>
-        <p style="margin-top: 10px; color: #94a3b8; font-size: 11px;">&copy; ${new Date().getFullYear()} AaoSikhe. All rights reserved.</p>
+        <p><strong>Aao Seekhe</strong> &bull; Candidate Portal &bull; Verified Communication</p>
+        <p style="margin-top: 10px; color: #94a3b8; font-size: 11px;">&copy; ${new Date().getFullYear()} Aao Seekhe. All rights reserved.</p>
       </div>
     </div>
   </div>
@@ -195,15 +195,15 @@ export const renderPlainTextEmail = ({ subject, bodyHtml, applicant = {} }) => {
     .trim();
 
   return `========================================
-AaoSikhe - Official Candidate Notification
+Aao Seekhe - Official Candidate Notification
 Subject: ${personalizedSubject}
 ========================================
 
 ${plainBody}
 
 ----------------------------------------
-AaoSikhe Candidate Portal
-© ${new Date().getFullYear()} AaoSikhe. All rights reserved.
+Aao Seekhe Candidate Portal
+© ${new Date().getFullYear()} Aao Seekhe. All rights reserved.
 `;
 };
 
@@ -221,8 +221,8 @@ export const sendSingleEmail = async ({ to, subject, html, text }, maxRetries = 
         throw new Error('SMTP transporter is not configured or offline.');
       }
 
-      const fromEmail = process.env.SMTP_FROM || process.env.SMTP_USER || 'noreply@aaosikhe.com';
-      const fromHeader = `"AaoSikhe" <${fromEmail.trim()}>`;
+      const fromEmail = process.env.SMTP_FROM || process.env.SMTP_USER || 'noreply@Aao Seekhe.com';
+      const fromHeader = `"Aao Seekhe" <${fromEmail.trim()}>`;
 
       const mailOptions = {
         from: fromHeader,
